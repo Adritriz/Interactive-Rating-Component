@@ -15,9 +15,11 @@ buttons.forEach((button) => {
 });
 
 submit.addEventListener("click", () => {
+    if (value) {submit.classList.add("button-clicked");
     rating.textContent = value;
     card.style.display = "none";
     thankYou.style.display = "flex";
+}
 });
 
 
